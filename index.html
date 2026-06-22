@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry ❤️</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    /* Dark gradient layer mixed with your offline background image for crisp text contrast */
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(31, 41, 55, 0.85)), 
+                url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    text-align:center;
+}
+.card{
+    max-width:600px;
+    padding:30px;
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,0.07);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    margin:20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+/* Clean scrollbar style if the card overflows on mobile devices */
+.card::-webkit-scrollbar {
+    width: 6px;
+}
+.card::-webkit-scrollbar-thumb {
+    background: rgba(255, 77, 109, 0.4);
+    border-radius: 10px;
+}
+h1{
+    color:#ff6b81;
+    margin-bottom:15px;
+}
+h2{
+    color:#ff8fa3;
+    margin-bottom:15px;
+}
+h3{
+    color:#ff4d6d;
+    margin-top: 20px;
+}
+p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+.btn{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:10px;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+.heart{
+    position:absolute;
+    color:#ff4d6d;
+    animation:float linear infinite;
+    opacity:.7;
+}
+@keyframes float{
+    0%{
+        transform:translateY(110vh) rotate(0deg);
+        opacity:0;
+    }
+    10%{
+        opacity:.7;
+    }
+    100%{
+        transform:translateY(-120px) rotate(360deg);
+        opacity:0;
+    }
+}
+.heart:nth-child(1){left:5%;font-size:20px;animation-duration:10s;}
+.heart:nth-child(2){left:15%;font-size:35px;animation-duration:14s;}
+.heart:nth-child(3){left:25%;font-size:28px;animation-duration:12s;}
+.heart:nth-child(4){left:35%;font-size:22px;animation-duration:16s;}
+.heart:nth-child(5){left:45%;font-size:40px;animation-duration:11s;}
+.heart:nth-child(6){left:55%;font-size:25px;animation-duration:15s;}
+.heart:nth-child(7){left:65%;font-size:32px;animation-duration:13s;}
+.heart:nth-child(8){left:75%;font-size:24px;animation-duration:17s;}
+.heart:nth-child(9){left:85%;font-size:36px;animation-duration:12s;}
+.heart:nth-child(10){left:95%;font-size:20px;animation-duration:14s;}
+</style>
+</head>
+<body>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="card">
+    <h1>I'm Sorry ❤️</h1>
+    <p>
+        I know I made mistakes, and I truly regret hurting you.
+        You mean more to me than words can express.
+    </p>
+    <button onclick="showMore()" class="btn">See More ❤️</button>
+    <div id="moreText" style="display:none; margin-top:20px;">
+        <h2>I Love You, Tuba ❤️</h2>
+        <p>
+            Tuba, I know I haven't been perfect, and I know there are moments
+            when my actions may have hurt you. For those moments, I am truly sorry.
+        </p>
+        <p>
+            You are one of the most important people in my life. Your smile,
+            your kindness, and the memories we've shared mean the world to me.
+            Every day I realize how lucky I am to have you in my life.
+        </p>
+        <p>
+            I never want my mistakes to make you doubt how much I care about you.
+            I am willing to learn, grow, and become a better person because you
+            deserve love, respect, and happiness.
+        </p>
+        <p>
+            No matter what happens, my feelings for you are real.
+            I love you, Tuba, with all my heart. ❤️
+        </p>
+        <h3>Will you forgive me? 🌹❤️</h3>
+    </div>
+</div>
+<script>
+function showMore() {
+    const text = document.getElementById("moreText");
+    const btn = document.querySelector(".btn");
+    if (text.style.display === "none") {
+        text.style.display = "block";
+        btn.innerHTML = "Hide ❤️";
+    } else {
+        text.style.display = "none";
+        btn.innerHTML = "See More ❤️";
+    }
+}
+</script>
+</body>
+</html>
