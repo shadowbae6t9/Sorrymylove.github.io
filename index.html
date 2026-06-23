@@ -11,78 +11,32 @@
     box-sizing:border-box;
 }
 body{
-    /* Dark gradient layer mixed with your offline background image for crisp text contrast */
-    background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(31, 41, 55, 0.85)), 
-                url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background:
+    linear-gradient(
+        rgba(17,24,39,0.75),
+        rgba(17,24,39,0.75)
+    ),
+    url('background.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     color:white;
     font-family:Arial,sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
     overflow:hidden;
     text-align:center;
 }
-.card{
-    max-width:600px;
-    padding:30px;
-    position:relative;
-    z-index:2;
-    background:rgba(255,255,255,0.07);
-    border-radius:20px;
-    backdrop-filter:blur(15px);
-    margin:20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    max-height: 90vh;
-    overflow-y: auto;
-}
-/* Clean scrollbar style if the card overflows on mobile devices */
-.card::-webkit-scrollbar {
-    width: 6px;
-}
-.card::-webkit-scrollbar-thumb {
-    background: rgba(255, 77, 109, 0.4);
-    border-radius: 10px;
-}
-h1{
-    color:#ff6b81;
-    margin-bottom:15px;
-}
-h2{
-    color:#ff8fa3;
-    margin-bottom:15px;
-}
-h3{
-    color:#ff4d6d;
-    margin-top: 20px;
-}
-p{
-    line-height:1.8;
-    margin-bottom:15px;
-}
-.btn{
-    background:#ff4d6d;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:16px;
-    margin-top:10px;
-    transition:0.3s;
-}
-.btn:hover{
-    transform:scale(1.05);
-}
+/* Floating Hearts */
 .heart{
     position:absolute;
     color:#ff4d6d;
     animation:float linear infinite;
     opacity:.7;
+    z-index:1;
 }
 @keyframes float{
     0%{
@@ -107,57 +61,92 @@ p{
 .heart:nth-child(8){left:75%;font-size:24px;animation-duration:17s;}
 .heart:nth-child(9){left:85%;font-size:36px;animation-duration:12s;}
 .heart:nth-child(10){left:95%;font-size:20px;animation-duration:14s;}
+/* Main Card */
+.card{
+    max-width:650px;
+    width:90%;
+    padding:30px;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url('jan.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    position:relative;
+    z-index:2;
+    max-height:90vh;
+    overflow-y:auto;
+}
+.card::-webkit-scrollbar{
+    width:6px;
+}
+.card::-webkit-scrollbar-thumb{
+    background:rgba(255,77,109,0.5);
+    border-radius:10px;
+}
+h1{
+    color:#ff6b81;
+    margin-bottom:20px;
+    font-size:42px;
+}
+h3{
+    color:#ff8fa3;
+    margin-top:20px;
+}
+p{
+    line-height:1.9;
+    font-size:20px;
+    margin-bottom:15px;
+}
 </style>
 </head>
 <body>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="heart">❤️</div>
-<div class="card">
-    <h1>I'm Sorry Jan  ❤️</h1>
-    <p>
-        প্রিয়,
-
-গত দুই দিন ধরে তোমার সাথে কথা না বলে, তোমার কষ্টের সময় তোমার পাশে না থেকে আমি খুব বড় ভুল করেছি। আমি জানি তুমি অনেক কেঁদেছ, অনেক কষ্ট পেয়েছ, আর সেই কষ্টের একটা বড় কারণ আমি নিজেই।
-
-তুমি যখন আমার ভালোবাসা আর সান্ত্বনা পাওয়ার কথা ছিল, তখন আমি উল্টো তোমার সাথে খারাপ ব্যবহার করেছি। আমি জানি শুধু “সরি” বললেই সব ঠিক হয়ে যায় না, কিন্তু আমি সত্যিই আমার আচরণের জন্য অনুতপ্ত।
-
-তোমাকে কাঁদানো, তোমার অনুভূতিগুলোকে গুরুত্ব না দেওয়া—এসবের জন্য আমি নিজেকে ক্ষমা করতে পারছি না। তুমি আমার জীবনে কতটা গুরুত্বপূর্ণ, সেটা হয়তো আমি আমার আচরণে বুঝাতে পারিনি। কিন্তু সত্যি হলো, তোমাকে হারানোর চিন্তাও আমাকে কষ্ট দেয়।
-
-আমি তোমার কাছে কোনো অজুহাত দিতে চাই না। আমি শুধু চাই তুমি জানো যে আমি আমার ভুল বুঝতে পেরেছি এবং মন থেকে ক্ষমা চাইছি। যদি পারো, আমাকে আরেকটা সুযোগ দিও তোমার বিশ্বাসটা আবার অর্জন করার।
-
-তুমি রাগ করতেই পারো, অভিমান করতেই পারো। আমি সেগুলো প্রাপ্য। তবুও আশা করি একদিন তুমি আমার এই ভুলটা ক্ষমা করে দেবে।
-
-আমি তোমাকে ভালোবাসি, আর তোমার হাসিটা আবার দেখতে চাই।
-
-— তোমার অপরাধী মানুষটা ❤️
-    </p>
-        <p>
-            No matter what happens, my feelings for you are real.
-            I love you, Tuba, with all my heart. ❤️
-        </p>
-        <h3>Will you forgive me? 🌹❤️</h3>
-    </div>
-</div>
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
 <script>
-function showMore() {
-    const text = document.getElementById("moreText");
-    const btn = document.querySelector(".btn");
-    if (text.style.display === "none") {
-        text.style.display = "block";
-        btn.innerHTML = "Hide ❤️";
-    } else {
-        text.style.display = "none";
-        btn.innerHTML = "See More ❤️";
-    }
-}
+document.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
+}, { once: true });
 </script>
+<!-- Hearts -->
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<!-- Apology Card -->
+<div class="card">
+<h1>I'm Sorry Jan ❤️</h1>
+<p>
+প্রিয়,
+গত দুই দিন ধরে তোমার সাথে কথা না বলে, তোমার কষ্টের সময় তোমার পাশে না থেকে আমি খুব বড় ভুল করেছি। আমি জানি তুমি অনেক কেঁদেছ, অনেক কষ্ট পেয়েছ, আর সেই কষ্টের একটা বড় কারণ আমি নিজেই।
+তুমি যখন আমার ভালোবাসা আর সান্ত্বনা পাওয়ার কথা ছিল, তখন আমি উল্টো তোমার সাথে খারাপ ব্যবহার করেছি। আমি জানি শুধু “সরি” বললেই সব ঠিক হয়ে যায় না, কিন্তু আমি সত্যিই আমার আচরণের জন্য অনুতপ্ত।
+তোমাকে কাঁদানো, তোমার অনুভূতিগুলোকে গুরুত্ব না দেওয়া—এসবের জন্য আমি নিজেকে ক্ষমা করতে পারছি না। তুমি আমার জীবনে কতটা গুরুত্বপূর্ণ, সেটা হয়তো আমি আমার আচরণে বুঝাতে পারিনি। কিন্তু সত্যি হলো, তোমাকে হারানোর চিন্তাও আমাকে কষ্ট দেয়।
+আমি তোমার কাছে কোনো অজুহাত দিতে চাই না। আমি শুধু চাই তুমি জানো যে আমি আমার ভুল বুঝতে পেরেছি এবং মন থেকে ক্ষমা চাইছি। যদি পারো, আমাকে আরেকটা সুযোগ দিও তোমার বিশ্বাসটা আবার অর্জন করার।
+তুমি রাগ করতেই পারো, অভিমান করতেই পারো। আমি সেগুলো প্রাপ্য। তবুও আশা করি একদিন তুমি আমার এই ভুলটা ক্ষমা করে দেবে।
+আমি তোমাকে ভালোবাসি, আর তোমার হাসিটা আবার দেখতে চাই।
+— তোমার অপরাধী মানুষটা ❤️
+</p>
+<p>
+No matter what happens, my feelings for you are real.
+I love you, Tuba, with all my heart. ❤️
+</p>
+<h3>Will you forgive me? 🌹❤️</h3>
+</div>
 </body>
 </html>
